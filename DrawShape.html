@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drawing Shapes</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+	  #floating-panel{
+		background-color: #fff;
+        border: 1px solid #999;
+        left: 25%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+		}
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+		<div id='floating-panel'>
+			<button onclick='newShape()'>Button</button>
+		</div>
+	<script type="text/javascript" src="C:\Users\Kevin\Desktop\New folder\google_maps\Drawshap.js" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnHi00qwT5pgf-u6emrWbpl8lWw5Y5L0w&callback=initMap"
+    async defer></script>
+  </body>
+</html>

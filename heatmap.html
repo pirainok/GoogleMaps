@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Heat Map</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+      #floating-panel {
+        background-color: #fff;
+        border: 1px solid #999;
+        left: 25%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+      }
+    </style>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnHi00qwT5pgf-u6emrWbpl8lWw5Y5L0w&signed_in=true&libraries=visualization&callback=initMap">
+    </script>
+	<script type="text/javascript" src="https://www.msu.edu/~pirainok/map.js" ></script>
+  </head>
+  <body>
+  <div id="floating-panel">
+      <button onclick="toggleHeatmap()">Toggle Heat Map</button>
+      <button onclick="changeGradient()">Change gradient</button>
+      <button onclick="changeRadius()">Change radius</button>
+      <button onclick="changeOpacity()">Change opacity</button>
+	  <button onclick="removeMarkers()">Remove Points</button>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
